@@ -72,6 +72,7 @@ struct CardModeView: View {
                     }) {
                         Image(systemName: isPlaying ? "pause.fill" : "play.fill").imageScale(.large)
                     }
+                    .frame(width: 100, height: 100, alignment: .trailing)
             )
             .onDisappear(perform: stop)
 

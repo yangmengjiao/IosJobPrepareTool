@@ -92,6 +92,7 @@ struct QuestionListView: View {
                             }) {
                                 Image(systemName: showingAnswer ? "eye.circle" : "eye.slash").imageScale(.large)
                             }
+                            .frame(width: 100, height: 100, alignment: .trailing)
                     )
                     
                 }
