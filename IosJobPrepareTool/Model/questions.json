@@ -1,0 +1,324 @@
+[
+   {
+       "id": 1,
+      "topic": "UI Related",
+      "question": "What is Responder Chain ?",
+      "answer": "A ResponderChain is a hierarchy of objects that have the opportunity to respond to events received.",
+   },
+   {
+       "id": 2,
+      "topic": "Test Related",
+      "question": "three colors in unit test ?",
+      "answer": " red, means fail; green, means pass;  no color , means this is need to be refactored ",
+   },
+   {
+       "id": 3,
+      "topic": "Test Related",
+      "question": "What’s Code Coverage?",
+      "answer": "Code coverage is a metric that helps us to measure the value of our unit tests.",
+   },
+   {
+       "id": 4,
+      "topic": "Design Patten",
+      "question": "What is Singleton Pattern ?",
+      "answer": "-The Singleton design pattern ensures that only one instance exists for a given class and that there’s a global access point to that instance.\n -It usually uses lazy loading to create the single instance when it’s needed the first time.\n-I have used it for logging class before , because a logging class usually need to be used over and over again by every class in a project",
+   },
+   {
+       "id": 5,
+      "topic": "Design Patten",
+      "question": "What is Facade Design Pattern?",
+      "answer": "The Facade design pattern provides a single interface to a complex subsystem. Instead of exposing the user to a set of classes and their APIs, you only expose one simple unified API.",
+   },
+   {
+       "id": 6,
+      "topic": "UI Related",
+      "question": "How could you setup Live Rendering? ",
+      "answer": "The attribute @IBDesignable lets Interface Builder perform live updates on a particular view. IBDesignable requires Init frame to be defined as well in UIView class.",
+   },
+   {
+       "id": 7,
+      "topic": "Agile",
+      "question": "what is Agile ?",
+      "answer": "- Agile software development means to  software development methodologies centered round the idea of iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams.- benefits of agile is : enables teams to deliver value faster, with greater quality and predictablity, and greater aptitude to respond to change. intended to allow for rapid delivery of high-quality software",
+   },
+   {
+       "id": 8,
+      "topic": "Agile",
+      "question": "what is scrum?",
+      "answer": "Scrum is one  of Agile methodology  also the most widely-used one. It is a lightweight process framework for agile development.",
+   },
+   {
+       "id": 9,
+      "topic": "Agile",
+      "question": "scrum principles ?",
+      "answer": "Self-organization;Collaboration;Value-based prioritization:tasks are constantly prioritized based on their value and importance for the end-users and the company to determine the order in which these tasks need to be completed.;Timeboxing : In Scrum, work is done in short release cycles called “sprints” (usually 2-4 weeks). Tasks are determined during sprint planning (usually around 1-2 hours);Iterative development:As the project requirements in Scrum are constantly being adjusted and revised, software development activities in this framework are also repeated, revisited, and reworked to create the best product.",
+   },
+   {
+       "id": 10,
+      "topic": "Frequently asked",
+      "question": "swift vs Objective-c?",
+      "answer": "- Performance : Swift is 2.6 times faster than Objective-C.Objective-Cuses the runtime code compilation, rather than the compile time, that is the main reason why Objective-C is slower\n- Syntax: Swift syntax is easy to read and write, but Objective-C has a complex code structure since it’s built on the C language.\n- Maintenance:  swift is easier to mainten, Objective-C is a frustrating process because developers must manage two separate files\n- Safty , swift is type safe and memeory safe languge, easier for devloper to find and fixs bugs. Objective-C’ safety is that it uses null pointers.if we call a method on nil objects, it will simply become a no-operation , it seems safe and beneficial because it doesn’t cause a crash,but actually, it may be an extensive source of bugs. A NOP causes unpredictable results that complicate the process of finding and fixing bugs.\n- Memory management: swift and oc both support ARC, but Objective-C uses the ARC supported within the Cocoa API, and not support for  procedural C and some other APIs like Core Graphics. This impacts memory management and causes extensive memory leaks , but Swift supports the ARC for all APIs\n-Optional Types, which make applications crash-resistant\n-Built-in error handling\n-Type-safe language\n-Supports pattern matching"
+   },
+   {
+       "id": 11,
+      "topic": "NetWorking",
+      "question": "HTTP verbs?",
+      "answer": "- post,  use this verb to create\n- get ,  use this verb to fetch or read or retrieve\n- delete, use it to delete\n- put , use it to replace \n- patch , use it to update \n"
+   } ,
+   {
+       "id": 12,
+      "topic": "Frequently asked",
+      "question": "What is Responder Chain ?",
+      "answer": "It's a hierarchy of objects that have the opportunity to respond to received events."
+   },
+   {
+       "id": 13,
+      "topic": "UI Related",
+      "question": "How could you setup Live Rendering?",
+      "answer": "The attribute @IBDesignable lets Interface Builder perform live updates on a particular view. IBDesignable requires Init frame to be defined as well in UIView class."
+   }, {
+       "id": 14,
+      "topic": "UI Related",
+      "question": "Tableview download image considerations?",
+      "answer": "- only download the image when the cell is scroller into view\n- downloading asyncly on background , not block the ui\n- when the image has downloaded for a cell , check if that is still in the view or whether it have been re-used by another piece of data .\n-if the cell reused, discard the image , otherwise we need to swift back to the main thread to change the image on the cell "
+   }, {
+       "id": 15,
+      "topic": "Test Related",
+      "question": "What’s Code Coverage?",
+      "answer": "- Code Coverage means how much code are covered by unit tests.\n - it is a measure of  the value of our unit tests."
+   }, {
+       "id": 16,
+      "topic": "Test",
+      "question": "What kind of test do you do ?",
+      "answer": "- ui test\n- unit test "
+   }, {
+       "id": 17,
+      "topic": "Test",
+      "question": "three colors in unit test ?",
+      "answer": " - red  , means fail.\n- green, means pass\n- no color , means this is need to be refactored "
+   }, {
+       "id": 18,
+      "topic": "Test",
+      "question": "what is setup and teardown in unit test?",
+      "answer": "- override set up instance method to set initial state before each test method.\n-Override the tearDown() instance method to perform cleanup after each test method completes."
+   }, {
+       "id": 19,
+      "topic": "Swift",
+      "question": "What is Enum or Enumerations?",
+      "answer": "- Enum is a type that basically contains a group of related values, we can use it to define a list of  possible values or states.\nand can bundle associated values with each individual state.\ncan have raw value\n-enum won’t allow us to create an instance."
+   }, {
+       "id": 20,
+      "topic": "Swift",
+      "question": " What’s the difference between the frame and the bounds?",
+      "answer": "- a uiview’s frame and bounds Both are CGRect ,which containing their X and Y position, plus their width and height\n- the difference is : a view’s bounds refers to its coordinates relative to its own space whereas its frame refers to its coordinates relative to its parent’s space."
+   }, {
+       "id": 21,
+      "topic": "Swift",
+      "question": "Explain lazy in Swift ?",
+      "answer": "- a keyword allow us to define  lazy stored properties.\n- initial value is not calculated until the first time is used.\n- when the init value is set on outside factors whose values are unknown.\n-eg:lazy var name: String"
+   }, {
+       "id": 22,
+      "topic": "Swift",
+      "question": "Explain what is defer ?",
+      "answer": "- defer is  keyword which allows us to provides a block of code\n- those code will be executed when the execution is leaving the current scope.\n- we usually use defer to do the clean up"
+   }, {
+       "id": 23,
+      "topic": "Swift",
+      "question": "How to pass data between view controllers?",
+      "answer": "There are 3 ways to pass data between view controllers:\n-Segue, in prepareForSegue method (Forward)\n-Delegate (Backward)\n-Setting variable directly (Forward)"
+   },{
+       "id": 24,
+      "topic": "Swift",
+      "question": "Explain Guard statement?",
+      "answer": "Ans: it is a swift feature, and there  are three big benefits to use guard it:\n-providing an early exit out of the function using break or using return.\n-guard statement is another way to safely unwrap optionals.\n-avoid write too much nested if let statements"
+   },{
+       "id": 25 ,
+      "topic": "Swift",
+      "question": "How to pass a variable as a reference ?",
+      "answer": "- there are two types of variables: reference and value types.\n-The difference between these two types is reference variable passing by reference, value type variable passing by the value\n-passing by values which means will create a copy of its data, and the reference type variable will just point to the original data in the memory."
+   },{
+       "id": 26 ,
+      "topic": "Swift",
+      "question": "function vs closure ",
+      "answer": "- closure basically are functions , but they can capture values\n- when we use closure we need be awake of strong reference cycle"
+   },{
+       "id": 27 ,
+      "topic": "Swift",
+      "question": "What is protocol ?",
+      "answer": "- a way to specify a set of methods you want a method to implement if it wants to work with one of your classes\n- delegats and Data Sources are protocols "
+   },{
+       "id": 28 ,
+      "topic": "Swift",
+      "question": "What is Optional chaining ?",
+      "answer": "- a process of querying or calling properties and methods on an optional type\n- might return nil or some value"
+   },{
+       "id": 29 ,
+      "topic": "Swift",
+      "question": "Fallthrough in swift ?",
+      "answer": "- fallthrough is a keyword we use in switch statement. to allow next all  case to be executed no mater the case matches or not\n-in java we need to write break after all case code, otherwise , our code will fallthrough .\n-in swift we do not need to worry about fall through , we do not have to write break, but if we want our code to fall through  we use fallthrough keyword"
+   },{
+       "id": 30 ,
+      "topic": "Swift",
+      "question": "What is Deep and Shallow copy?",
+      "answer": "Deep copy — Duplicates everything\n-With a deep copy, any object pointed to by the source is copied and the copy is pointed to by the destination. So two completely separate objects will be created.\n- Performs well in a multithreaded environment — changes in one object will have no effect on another object.\n- Value types are copied deeply.\n- Copying Value types creates a Deep copy.\nShallow copy — Duplicates as little as possible\n- With a shallow copy, any object pointed to by the source is also pointed to by the destination. So only one object will be created in the memory.\n- Only the reference is copied, so shallow copy is faster than deep copy\n - Copying reference types creates a shallow copy."
+   },{
+       "id": 31 ,
+      "topic": "Swift",
+      "question": "Object Passing?",
+      "answer": "there are two type of object passing\n- pass by value , structs, deep copied\n- pass by reference ,class, shallow copied "
+   },{
+       "id": 32 ,
+      "topic": "Swift",
+      "question": "What is subscripts?",
+      "answer": "- subscripts is a swift feature that allows us to set and retrieve values by index without needing separate methods for setting and retrieval."
+   },{
+       "id": 33 ,
+      "topic": "Swift",
+      "question": "What is Tuple ?",
+      "answer": "- It is a type of  compound Value which can hold  multiple different types of values.\n- They are commonly used to return multiple values from a function call"
+   },{
+       "id": 34 ,
+      "topic": "Swift",
+      "question": "What is Generics?",
+      "answer": "- Generics is a swift feature that allows  us to create generic types, protocols, and functions that are not  tied to any specific type.\n - With generics you can write more flexible and reusable code,\n - For example :Array and Dictionary used generic that why we can store different type of data in it."
+   },{
+       "id": 35 ,
+      "topic": "ios Basics",
+      "question": "What is appid - bundle id ?",
+      "answer": "- bundle id is the the unique identifier of each app, each app should have differ bundle id\n- app id is a two part str, used to identify one or more apps from a development team"
+   },{
+       "id": 36 ,
+      "topic": "ios Basics",
+      "question": "How to keep different flavors for productions and development release ?",
+      "answer": "- create different targets.\n- each target create different info.list"
+   },{
+       "id": 37 ,
+      "topic": "ios Basics",
+      "question": "What is appid - bundle id ?",
+      "answer": "- bundle id is the the unique identifier of each app, each app should have differ bundle id\n- app id is a two part str, used to identify one or more apps from a development team"
+   },{
+       "id": 38 ,
+      "topic": "ios Basics",
+      "question": "How do your track bugs ?",
+      "answer": "- using firebase Crashlytics.\n - when distributed you can see crashes in iTunes connect "
+   },{
+       "id": 39 ,
+      "topic": "ios Basics",
+      "question": "List and explain the different types of iOS app states (life cycle)?",
+      "answer": "- not running : app not launched .\n- inactive : app is running in the foreground but not currently recieveing events\n- active : app running in the foreground  currently recieveing events.\n- background : app in the background and still executing code.\n- suspend : : app in the background not executing code"
+   },{
+       "id": 40 ,
+      "topic": "Frequently asked",
+      "question": "What is Dependency Injection? ",
+      "answer": "(DI) is a technique which allows to populate a class with objects, rather than relying on the class to create the objects itself.there are different  ways to do DI\n- Initializer injection: dependencies are passed via initializer. Fits best when the number of dependencies is low or the object needs to be immutable.\n- property injection: dependencies are passed via properties.ependencies need to be changed later or you do not directly initialize the object.\n-  interface injection: dependency is injected via setter method or passed as a parameter.\n-  ambient context injection: single globally accessible dependency, exposed via protocol. This allows to substitute implementation if needed, e.g. in unite tests. we used it "
+   },{
+       "id": 41 ,
+      "topic": "Objective-c",
+      "question": "Why don’t we use strong for enum property in Objective-C? ",
+      "answer": "Because enums aren’t objects, so we don’t specify strong or weak here."
+   },{
+       "id": 42 ,
+      "topic": "Objective-c",
+      "question": "@synthesize vs  @dynamic in Objective-C ?",
+      "demo": "synthesize generates getter and setter methods for your property.\n- @synthesize tells the compiler to create those getter and setter methods for you\n- @dynamic tells the compiler that the  getter and setter methods create somewhere else, and are provided at runtime.\n- eg:We use dynamic for subclasses of NSManagedObject. because its properties are created at runtime by Core Data",
+      "answer": "    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {\n      // Override point for customization after application launch\n.       return true\n      }"
+   },{
+       "id": 43 ,
+      "topic": "Objective-c",
+      "question": "Why do we use synchronized ?",
+      "answer": "- to make sure thread is safe.\n - because synchronized guarantees that only one thread can be executing that code in the block at any given time."
+   },{
+       "id": 44 ,
+      "topic": "Objective-c",
+      "question": "What is made up of NSError object ?",
+      "answer": " There are three parts of NSError object: \n- a domain: identifies what categories of errors this error is coming from.\n-  an error code:a domain-specific error code\n- user info dictionary:containing application-specific information"
+   },{
+       "id": 45 ,
+      "topic": "Objective-c",
+      "question": "What is method swizzling process ? ",
+      "answer": "- it is the process of changing the implementation of an exsting selector at runtime\n- swizzling works on Objective-c runtime ",
+   },{
+       "id": 46,
+      "topic": "Design Patten",
+      "question": "Why is design pattern very important ?",
+      "answer": "- Design patterns are reusable solutions to common problems in software design.\n- They’re templates designed to help you write code that’s easy to understand and reuse.\n- Most common Cocoa design patterns:\n   >Creational: Singleton.\n   >Structural: Decorator, Adapter, Facade.\n   >Behavioral: Observer, and, Memento",
+   },{
+       "id": 47,
+      "topic": "Design Patten",
+      "question": " What is Singleton Pattern ?",
+      "answer": "- The Singleton design pattern is a simple class which only allows a single instance ,we can not new an instance of it\n-  It usually uses lazy loading to create the single instance when it’s needed the first time.",
+   },{
+       "id": 48,
+      "topic": "Design Patten",
+      "question": "What is Facade Design Pattern ?",
+      "answer": "- The Facade design pattern provides a single interface to a complex subsystem.\n-  Instead of exposing the user to a set of classes and their APIs, you only expose one simple unified API.",
+   },{
+       "id": 49,
+      "topic": "Design Patten",
+      "question": "What is Adapter Pattern ?",
+      "answer": "- An Adapter allows classes with incompatible interfaces to work together. \n- It wraps itself around an object and exposes a standard interface to interact with that object.",
+   },{
+       "id": 50,
+      "topic": "Multithreading",
+      "question": "How to make a code snippet thread safe ?",
+      "answer": "- method1 : use @ synchronized \n- method2 making all objects immutable ",
+   },{
+       "id": 51,
+      "topic": "Multithreading",
+      "question": "What is the difference between Synchronous & Asynchronous task ?",
+      "answer": "- Synchronous: waits until the task have completed\n- Asynchronous: completes a task in the background and can notify you when complete",
+   },{
+       "id": 52,
+      "topic": "Multithreading",
+      "question": "What is the difference strong, weaks, read only and copy ?",
+      "answer": "strong, weak, assign property attributes define how memory for that property will be managed.\n- Strong means that the reference count will be increased and the reference to it will be maintained through the life of the object\n- Weak ( non-strong reference ), means that we are pointing to an object but not increasing its reference count. It’s often used when creating a parent child relationship. The parent has a strong reference to the child but the child only has a weak reference to the parent.\n   >    Every time used on var\n   >    Every time used on an optional type\n   >    Automatically changes itself to nil\n- Read-only, we can set the property initially but then it can’t be changed.\n- Copy means that we’re copying the value of the object when it’s created. Also prevents its value from changing. ",
+   },{
+       "id": 53,
+      "topic": "Multithreading",
+      "question": "Atomic  vs monatomic ?",
+      "answer": "- atomic, default , it is thread safe but slow ,because it make sure present process is completed by CPU before another process access the variable.\n- nonatomic, the opposite of atomic",
+   },{
+       "id": 54,
+      "topic": "Frequently asked",
+      "question": "Map vs compactMap and flatMap ?",
+      "answer": "- map() : transform from one thing to another, if it is an optional, only transfer when the value is not nil :\n- CompactMap:  transform then compact , deal with optional  sequence type ,discard all nil values .\n- flatMap : transform then flatten,  deal with non-optional sequence type",
+   },{
+       "id": 55,
+     "topic": "Frequently asked",
+      "question": "List commonly used protocols?",
+      "answer": "- “Can-do” protocols : Hashable Equatable  Codeable\n- “Is-a” protocols : Error,  Numeric\n- “Can-be” protocols : StringProtocol, NSObjectProtocol",
+   },{
+       "id": 56,
+      "topic": "Frequently asked",
+      "question": "Weak Vs Unowned in memory management ?",
+      "answer": "- Use a weak reference whenever it is valid for that reference to become nil at some point during its lifetime. Conversely.\n- use an unowned reference when you know that the reference will never be nil once it has been set during initialization",
+   },{
+       "id": 57,
+      "topic": "Frequently asked",
+      "question": "Whats is bundle id and app id?",
+      "answer": "- A bundle ID precisely identifies a single app.\n- App ID is a two-part string used to identify one or more apps from a single development team.\n- By the way : Usually enable Capabilities of an app such as push notification, will enable for  App id related app or apps ",
+   },{
+       "id": 58,
+      "topic": "What's new",
+      "question": "Map vs compactMap and flatMap ?",
+      "answer": "changes in  swift 4 :\n- we can use String as collection ,string adopted collection . no .characters any more.\n- supporting  multi-line strings.\n- Json decode become much easier than before by using JSONDecoder.\n changes in  swift5 :.\n- introduces a Result Enum type into the standard library, giving us a simpler, clearer way of handling errors in complex code such as asynchronous APIs, Result  has two cases: success and failure.\n- introduces Powerful String interpolation system, we can now handle  String interpolation  more efficient and more flexible by extension String.StringInterpolation",
+   },{
+       "id": 59,
+      "topic": "What's new",
+      "question": "Map vs compactMap and flatMap ?",
+      "answer": "changes in  swift 4 :\n- we can use String as collection ,string adopted collection . no .characters any more.\n- supporting  multi-line strings.\n- Json decode become much easier than before by using JSONDecoder.\n changes in  swift5 :.\n- introduces a Result Enum type into the standard library, giving us a simpler, clearer way of handling errors in complex code such as asynchronous APIs, Result  has two cases: success and failure.\n- introduces Powerful String interpolation system, we can now handle  String interpolation  more efficient and more flexible by extension String.StringInterpolation",
+   },{
+       "id": 60 ,
+      "topic": "ios Basics",
+      "question": "What is a workspace Project target and scheme ?",
+      "answer": "- Workspace - Contains one or more projects. These projects usually relate to one another\n- Project - Contains code and resources\n- Target - Each project has one or more targets.Each target defines a list of build settings for that project. Each target also defines a list of classes, resources, custom scripts etc to include/ use when building.Targets are usually used for different distributions of the same project.Usually, each target has at least one scheme"
+   },{
+       "id": 61 ,
+      "topic": "Design Patten",
+      "question": "What is Design patterns and architecture",
+      "answer": "-Design patterns is a model to solve a recurring problem that occurs frequently in computer science .\n- Architecture is a set of rules that defined how code must structured to be maintainable and extendable.\n- it helps you build maintainable software that is easy to change, because the only thing constant in software development is that software is going to change.\n- By applying good architecture and design patterns, you help yourself and your colleagues to have the common ground, language, and nomenclature for things in code that you work with day to day. It improves the readability, recognizability, maintainability, and ﬂexibility of your code. It helps you follow SOLID principles, which will help your code stand the test of time and the most important and inevitable test that your codebase could ever face change!"
+   }
+]
+
+
+
