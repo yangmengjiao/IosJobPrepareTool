@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2828BF1CF86DF5D7076012A0 /* libPods-IosJobPrepareTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E566B93B2309DDC0830AA460 /* libPods-IosJobPrepareTool.a */; };
+		29E62EB325D369A6007F904A /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E62EB225D369A6007F904A /* BannerVC.swift */; };
 		4B4DFF5625CB24C900C1569A /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4DFF5525CB24C900C1569A /* PrivacyView.swift */; };
 		4B5AB52625CA18AF00B53FE9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AB52525CA18AF00B53FE9 /* Constant.swift */; };
 		4B5AB52925CA204C00B53FE9 /* QuestionListModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AB52825CA204C00B53FE9 /* QuestionListModelView.swift */; };
@@ -19,17 +21,19 @@
 		4B8B30E125C32ECC0009EB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B30E025C32ECC0009EB4B /* Preview Assets.xcassets */; };
 		4BC654F225CC574C00213C35 /* Interstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC654F125CC574C00213C35 /* Interstitial.swift */; };
 		4BCDF6D925CB481000D000EB /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDF6D825CB481000D000EB /* SettingViewModel.swift */; };
-		4BED5BF925C35C400059C954 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 4BED5BF825C35C400059C954 /* SwiftPackageProductDependency */; };
+		4BED5BF925C35C400059C954 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 4BED5BF825C35C400059C954 /* QGrid */; };
 		4BED5C0125C367A00059C954 /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED5C0025C367A00059C954 /* ModelLayer.swift */; };
 		4BED5C0425C367A60059C954 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BED5C0325C367A60059C954 /* questions.json */; };
 		4BED5C0725C367B20059C954 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED5C0625C367B20059C954 /* Question.swift */; };
 		4BED5C0A25C367E80059C954 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED5C0925C367E80059C954 /* QuestionListView.swift */; };
 		4BED5C0D25C368A60059C954 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED5C0C25C368A60059C954 /* Bundle-Decodable.swift */; };
-		4BED5C1125C378700059C954 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 4BED5C1025C378700059C954 /* SwiftPackageProductDependency */; };
+		4BED5C1125C378700059C954 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 4BED5C1025C378700059C954 /* SwiftUIPager */; };
 		4BED5C1425C37CAD0059C954 /* CardModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BED5C1325C37CAD0059C954 /* CardModeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29E62EB225D369A6007F904A /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		4A703897E275BDE41DE373D7 /* Pods-IosJobPrepareTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosJobPrepareTool.release.xcconfig"; path = "Target Support Files/Pods-IosJobPrepareTool/Pods-IosJobPrepareTool.release.xcconfig"; sourceTree = "<group>"; };
 		4B4DFF5525CB24C900C1569A /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		4B5AB52525CA18AF00B53FE9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4B5AB52825CA204C00B53FE9 /* QuestionListModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListModelView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		4BED5C0925C367E80059C954 /* QuestionListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 		4BED5C0C25C368A60059C954 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		4BED5C1325C37CAD0059C954 /* CardModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModeView.swift; sourceTree = "<group>"; };
+		9A32C7A7312E52ECFD20BB9E /* Pods-IosJobPrepareTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosJobPrepareTool.debug.xcconfig"; path = "Target Support Files/Pods-IosJobPrepareTool/Pods-IosJobPrepareTool.debug.xcconfig"; sourceTree = "<group>"; };
+		E566B93B2309DDC0830AA460 /* libPods-IosJobPrepareTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IosJobPrepareTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BED5C1125C378700059C954 /* BuildFile in Frameworks */,
-				4BED5BF925C35C400059C954 /* BuildFile in Frameworks */,
+				4BED5C1125C378700059C954 /* SwiftUIPager in Frameworks */,
+				4BED5BF925C35C400059C954 /* QGrid in Frameworks */,
+				2828BF1CF86DF5D7076012A0 /* libPods-IosJobPrepareTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8901847653223CF975010E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E566B93B2309DDC0830AA460 /* libPods-IosJobPrepareTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		352A6C3A6816835D371D1800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A32C7A7312E52ECFD20BB9E /* Pods-IosJobPrepareTool.debug.xcconfig */,
+				4A703897E275BDE41DE373D7 /* Pods-IosJobPrepareTool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4B6CD1EA25C6217200FD604A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +102,8 @@
 			children = (
 				4B8B30D825C32EC80009EB4B /* IosJobPrepareTool */,
 				4B8B30D725C32EC80009EB4B /* Products */,
+				352A6C3A6816835D371D1800 /* Pods */,
+				2C8901847653223CF975010E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4BC654F125CC574C00213C35 /* Interstitial.swift */,
+				29E62EB225D369A6007F904A /* BannerVC.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -170,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8B30E525C32ECC0009EB4B /* Build configuration list for PBXNativeTarget "IosJobPrepareTool" */;
 			buildPhases = (
+				77F0BED67A6C3E75165DF1D6 /* [CP] Check Pods Manifest.lock */,
 				4B8B30D225C32EC80009EB4B /* Sources */,
 				4B8B30D325C32EC80009EB4B /* Frameworks */,
 				4B8B30D425C32EC80009EB4B /* Resources */,
@@ -180,8 +208,8 @@
 			);
 			name = IosJobPrepareTool;
 			packageProductDependencies = (
-				4BED5BF825C35C400059C954 /* SwiftPackageProductDependency */,
-				4BED5C1025C378700059C954 /* SwiftPackageProductDependency */,
+				4BED5BF825C35C400059C954 /* QGrid */,
+				4BED5C1025C378700059C954 /* SwiftUIPager */,
 			);
 			productName = IosJobPrepareTool;
 			productReference = 4B8B30D625C32EC80009EB4B /* IosJobPrepareTool.app */;
@@ -211,8 +239,8 @@
 			);
 			mainGroup = 4B8B30CD25C32EC80009EB4B;
 			packageReferences = (
-				4BED5BF725C35C400059C954 /* RemoteSwiftPackageReference */,
-				4BED5C0F25C378700059C954 /* RemoteSwiftPackageReference */,
+				4BED5BF725C35C400059C954 /* XCRemoteSwiftPackageReference "QGrid" */,
+				4BED5C0F25C378700059C954 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
 			);
 			productRefGroup = 4B8B30D725C32EC80009EB4B /* Products */;
 			projectDirPath = "";
@@ -236,6 +264,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77F0BED67A6C3E75165DF1D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosJobPrepareTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B8B30D225C32EC80009EB4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -249,6 +302,7 @@
 				4B4DFF5625CB24C900C1569A /* PrivacyView.swift in Sources */,
 				4B5AB52925CA204C00B53FE9 /* QuestionListModelView.swift in Sources */,
 				4B6CD1D425C3E35300FD604A /* SpeechService.swift in Sources */,
+				29E62EB325D369A6007F904A /* BannerVC.swift in Sources */,
 				4B5AB53425CB158C00B53FE9 /* SettingView.swift in Sources */,
 				4BCDF6D925CB481000D000EB /* SettingViewModel.swift in Sources */,
 				4B6CD1D025C3D9F800FD604A /* SearchBar.swift in Sources */,
@@ -380,6 +434,7 @@
 		};
 		4B8B30E625C32ECC0009EB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A32C7A7312E52ECFD20BB9E /* Pods-IosJobPrepareTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,6 +457,7 @@
 		};
 		4B8B30E725C32ECC0009EB4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A703897E275BDE41DE373D7 /* Pods-IosJobPrepareTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +502,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4BED5BF725C35C400059C954 /* RemoteSwiftPackageReference */ = {
+		4BED5BF725C35C400059C954 /* XCRemoteSwiftPackageReference "QGrid" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Q-Mobile/QGrid";
 			requirement = {
@@ -454,7 +510,7 @@
 				minimumVersion = 0.1.4;
 			};
 		};
-		4BED5C0F25C378700059C954 /* RemoteSwiftPackageReference */ = {
+		4BED5C0F25C378700059C954 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fermoya/SwiftUIPager.git";
 			requirement = {
@@ -465,14 +521,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4BED5BF825C35C400059C954 /* SwiftPackageProductDependency */ = {
+		4BED5BF825C35C400059C954 /* QGrid */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4BED5BF725C35C400059C954 /* RemoteSwiftPackageReference */;
+			package = 4BED5BF725C35C400059C954 /* XCRemoteSwiftPackageReference "QGrid" */;
 			productName = QGrid;
 		};
-		4BED5C1025C378700059C954 /* SwiftPackageProductDependency */ = {
+		4BED5C1025C378700059C954 /* SwiftUIPager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4BED5C0F25C378700059C954 /* RemoteSwiftPackageReference */;
+			package = 4BED5C0F25C378700059C954 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
 			productName = SwiftUIPager;
 		};
 /* End XCSwiftPackageProductDependency section */
