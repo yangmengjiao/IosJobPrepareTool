@@ -1,0 +1,8 @@
+platform :ios, '14.0'
+project 'IosJobPrepareTool.xcodeproj' #added this line
+target 'IosJobPrepareTool' do
+
+pod 'Google-Mobile-Ads-SDK'
+
+end
+

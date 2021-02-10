@@ -26,6 +26,8 @@ struct QuestionListView: View {
     
     var body: some View {
         if #available(iOS 14.0, *) {
+            Banner()
+
             ZStack {
                 Rectangle()
                     .fill(Constant.myOrangeColor)

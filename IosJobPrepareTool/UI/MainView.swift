@@ -14,8 +14,10 @@ struct MainView: View {
     
    
     var body: some View {
-        
+                
         NavigationView {
+//            Banner()
+
             TabView(selection: $selectedTab) {
                 
                 QGrid(ModelLayer.topics,
@@ -42,10 +44,13 @@ struct MainView: View {
                         Image(systemName: Tabs.tab4.imageName)
                         Text(Tabs.tab4.title)
                 }.tag(Tabs.tab4)
+                
+
             }
             .accentColor(Constant.myOrangeColor)
             .navigationBarTitle(selectedTab.navigationTitle, displayMode: selectedTab.displayLargeMode ? .large : .inline)
             .navigationBarColor(backgroundColor: Constant.myOrangeUIColor, titleColor: selectedTab.navigationBarStyle ? .white : .black)
+            
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .accentColor(Constant.navigationTintColor)
