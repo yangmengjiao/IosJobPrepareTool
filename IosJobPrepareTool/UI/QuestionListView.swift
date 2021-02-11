@@ -26,7 +26,6 @@ struct QuestionListView: View {
     
     var body: some View {
         if #available(iOS 14.0, *) {
-            Banner()
 
             ZStack {
                 Rectangle()
@@ -98,22 +97,40 @@ struct QuestionListView: View {
                     )
                     
                 }
+                
+                Banner()
+
+                                
             }
-         
+                
   
         } else {
             List(question, id: \.self ){ q in
                 VStack {
+                    
+
                     Text(q.question)
                     
                     Text(String(q.answer))
                         .foregroundColor(.gray)
+                    
+                    
                 }
                 
+
+                
+
+                
             }
-            .navigationBarTitle(navtitle)           
+            .navigationBarTitle(navtitle)
+            
+            Banner()
+
+
         }
         
+
+
     }
 }
 
