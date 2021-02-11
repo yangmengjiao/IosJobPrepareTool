@@ -10,8 +10,6 @@
 import SwiftUI
 import SwiftUIPager
 
-
-
 struct CardModeView: View {
     var question: [Question]
     @EnvironmentObject var page1: Page
@@ -28,6 +26,9 @@ struct CardModeView: View {
     var data = Array(0..<10)
 
     @State var alignment: ExamplePositionAlignment = .start
+    
+    // for ads
+    var interstitial = Interstitial()
 
     var body: some View {
 
@@ -59,7 +60,7 @@ struct CardModeView: View {
             .navigationBarItems(
                 trailing:
                     Button(action: {
-                       
+                        self.interstitial.showAd()
                        
                         // todo: play sounds tts
                         if isPlaying {
