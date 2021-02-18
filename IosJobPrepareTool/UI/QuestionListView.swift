@@ -24,6 +24,9 @@ struct QuestionListView: View {
     // search text for search bar
     @State private var searchText: String = ""
     
+    var emptyQuestion = [ Question(id: -111, topic: "", question: "no questions", answer: "", demo: nil, showAnswer: false)]
+    
+    
     var body: some View {
         if #available(iOS 14.0, *) {
 
@@ -37,64 +40,71 @@ struct QuestionListView: View {
                         SearchBar(text: $searchText)
                     }
                 
-                    List(question.filter({ searchText.isEmpty ? true : $0.question.lowercased().contains(searchText.lowercased())}), id: \.self ){ q in
-                        let index = question.firstIndex(of: q)!
-                        VStack(alignment: .leading) {
-                            HStack {
-                                Text(q.question)
-                                    .foregroundColor(Constant.myOrangeColor)
-                                    .bold()
-                                Spacer()
-                                
-                                Button(action: {
-                               // delete this button
+                    if question.filter({ searchText.isEmpty ? true : $0.question.lowercased().contains(searchText.lowercased())}).count > 0 {
+                        List(question.filter({ searchText.isEmpty ? true : $0.question.lowercased().contains(searchText.lowercased())}), id: \.self ){ q in
+                            let index = question.firstIndex(of: q)!
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Text(q.question)
+                                        .foregroundColor(Constant.myOrangeColor)
+                                        .bold()
+                                    Spacer()
                                     
-                                }) {
-                                    Image(systemName: arr[index] ? "chevron.down" : "chevron.right")
-                                        .foregroundColor(.gray)
-                                    //.renderingMode(.original)
-                                }.padding(5)
-                            }.onTapGesture {
-                                withAnimation() {
-                                    arr[index].toggle()
+                                    Button(action: {
+                                   // delete this button
+                                        
+                                    }) {
+                                        Image(systemName: arr[index] ? "chevron.down" : "chevron.right")
+                                            .foregroundColor(.gray)
+                                        //.renderingMode(.original)
+                                    }.padding(5)
+                                }.onTapGesture {
+                                    withAnimation() {
+                                        arr[index].toggle()
+                                    }
+                                }
+                                
+                                if arr[index] {
+                                    let page = Page.withIndex(index)
+                                   NavigationLink(
+                                    destination: CardModeView(question: self.question)
+                                        .environmentObject(page)
+                                   ) {
+                                    Text(String(q.answer))
+                                        .foregroundColor(.black)
+                                        .padding(5)
+                                        .transition(.opacity)
+        //                                .environmentObject(page)
+                                   }
                                 }
                             }
+                            .listRowBackground(Color(Constant.mylighterOrangeUIColor))
                             
-                            if arr[index] {
-                                let page = Page.withIndex(index)
-                               NavigationLink(
-                                destination: CardModeView(question: self.question)
-                                    .environmentObject(page)
-                               ) {
-                                Text(String(q.answer))
-                                    .foregroundColor(.black)
-                                    .padding(5)
-                                    .transition(.opacity)
-    //                                .environmentObject(page)
-                               }
-                            }
                         }
-                        .listRowBackground(Color(Constant.mylighterOrangeUIColor))
                         
-                    }
-                    
-    //                .environmentObject(page)
-                    .buttonStyle(PlainButtonStyle())
-                    .navigationBarTitle(navtitle)
-                    .navigationBarItems(
-                        trailing:
-                            Button(action: {
-                                showingAnswer.toggle()
-                                if showingAnswer {
-                                    arr = Array(repeating: true, count: 100)
-                                } else {
-                                    arr = Array(repeating: false, count: 100)
+        //                .environmentObject(page)
+                        .buttonStyle(PlainButtonStyle())
+                        .navigationBarTitle(navtitle)
+                        .navigationBarItems(
+                            trailing:
+                                Button(action: {
+                                    showingAnswer.toggle()
+                                    if showingAnswer {
+                                        arr = Array(repeating: true, count: 100)
+                                    } else {
+                                        arr = Array(repeating: false, count: 100)
+                                    }
+                                }) {
+                                    Image(systemName: showingAnswer ? "eye.circle" : "eye.slash").imageScale(.large)
                                 }
-                            }) {
-                                Image(systemName: showingAnswer ? "eye.circle" : "eye.slash").imageScale(.large)
-                            }
-                            .frame(width: 100, height: 100, alignment: .trailing)
-                    )
+                                .frame(width: 100, height: 100, alignment: .trailing)
+                        )
+                    } else {
+                        Text("no questions")
+                            .foregroundColor(.white)
+                            .bold()
+                        Spacer()
+                    }
                     
                 }
                 
